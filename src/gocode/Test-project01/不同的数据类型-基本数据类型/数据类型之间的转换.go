@@ -58,10 +58,17 @@ func main() {
 
 	var o1 string = "-8"
 	var p1 , _  = strconv.ParseUint(o1, 10, 64)
-	fmt.Println("p的值为", p)
+	fmt.Println("p的值为", p1)
 
-	// var q string = "23.47"
-	// var r, _ = strconv.ParseFloat( )
+	var q string = "23.47"
+	var r, _ = strconv.ParseFloat(q, 64)
+	fmt.Println("r的值为:", r)
+
+
+	var s string = "GoLang"
+	var t int32  = 20
+	t, _ = strconv.ParseInt(s, 10, 32)
+	fmt.Println("t的值为:", t)
 
 
 
