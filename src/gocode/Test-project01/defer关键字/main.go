@@ -9,6 +9,7 @@ func main() {
 func test(n1 int, n2 int) int {
 	// 程序遇到defer关键字，不会立即执行defer语句，而是将这些语句放入一个栈中，先去执行defer下的语句，执行完后再将栈中的语句取出.
 	// 并且defer会记录语句放入栈里时的状态，如果变量在后续语句中更改，不会影响defer输出结果.
+	// defer语句是在return语句后执行。应用场景: 关闭某个资源，例如数据库连接...
 	defer fmt.Println("n1的值为", n1) // 此时是10
 	defer fmt.Println("n2的值为", n2) // 此时是20
 	n1 += 10                       // n1 = 20

@@ -45,31 +45,26 @@ func main() {
 
 	fmt.Println("第二个参数:", l)
 
-
 	var m int64 = 8
 	var n string = strconv.FormatInt(m, 2)
-	
+
 	fmt.Println("n的值为", n)
 
-
 	var o string = "8"
-	var p , _  = strconv.ParseInt(o, 10, 64)
+	var p, _ = strconv.ParseInt(o, 10, 64)
 	fmt.Println("p的值为", p)
 
 	var o1 string = "-8"
-	var p1 , _  = strconv.ParseUint(o1, 10, 64)
+	var p1, _ = strconv.ParseUint(o1, 10, 64)
 	fmt.Println("p的值为", p1)
 
 	var q string = "23.47"
 	var r, _ = strconv.ParseFloat(q, 64)
 	fmt.Println("r的值为:", r)
 
-
-	var s string = "GoLang"
-	var t int32  = 20
-	t, _ = strconv.ParseInt(s, 10, 32)
-	fmt.Println("t的值为:", t)
-
-
+	//var s string = "GoLang"
+	//var t int32  = 20
+	//t, _ = strconv.ParseInt(s, 10, 32)
+	//fmt.Println("t的值为:", t)
 
 }
