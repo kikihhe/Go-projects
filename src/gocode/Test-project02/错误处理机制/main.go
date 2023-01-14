@@ -15,14 +15,12 @@ func main() {
 		}
 	}()
 
-	//test1()
 	test2(10, 1)
 	fmt.Println("执行test()下的语句")
 }
 
 // 程序错误
 func test1() int {
-
 	num1 := 10
 	num2 := 0
 	return num1 / num2
@@ -37,5 +35,4 @@ func test2(num1 int, num2 int) (int, error) {
 		panic(err)
 	}
 	return num1 / num2, nil
-
 }
