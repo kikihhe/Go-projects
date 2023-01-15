@@ -41,6 +41,11 @@ func main() {
 	//fmt.Println(len(slice2))
 	//slice2[5] = 6
 	//fmt.Println(len(slice2))
-	fmt.Println(slice2) //此时已经有值
+	//slice3 := append(slice2, 6)
+	//fmt.Println(slice3) //此时已经有值
+	slice4 := make([]int, 5, 5)
+	i := copy(slice4, slice2)
+	fmt.Println("copy的返回值为:", i)
+	fmt.Println("slice4的值为:", slice4)
 
 }
