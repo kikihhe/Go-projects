@@ -5,11 +5,24 @@ import "fmt"
 var num int = 10
 var numx2, numx3 int
 
+func test(a int) {
+	fmt.Println(a)
+}
+
+func test01(num1 int, num2 int, testFunc func(int)) {
+	testFunc(num1)
+	testFunc(num2)
+}
 func main() {
-	numx2, numx3 = getX2AndX3(num)
-	PrintValues()
-	numx2, numx3 = getX2AndX3_2(num)
-	PrintValues()
+	//numx2, numx3 = getX2AndX3(num)
+	//PrintValues()
+	//numx2, numx3 = getX2AndX3_2(num)
+	//PrintValues()
+	//
+	a := test
+	fmt.Printf("a类型: %T, test函数类型: %T\n", a, test)
+	fmt.Println(a)
+	fmt.Println(test)
 }
 
 func PrintValues() {
